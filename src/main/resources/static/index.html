@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>AI Study Assistant</h1>
+        <p>Your personal AI learning companion</p>
+
+        <div id="chat">
+            <div class="bot-message">
+                Hello! Ask me anything or upload an image.
+            </div>
+        </div>
+
+        <div id="preview"></div>
+
+        <div class="input-area">
+
+            <label for="imageInput" class="upload-button">
+                📎
+            </label>
+
+            <input type="file" id="imageInput"
+                   accept="image/*" hidden>
+
+            <input type="text" id="question"
+                   placeholder="Ask me anything...">
+
+            <button onclick="askAI()">Send</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
